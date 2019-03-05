@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colourApp">
+
+            <TextView
+                android:id="@+id/main_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Fullerton College"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fullerton_logo" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fullerton_college" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/contact_info">
+
+            <ImageView
+                android:id="@+id/hornet_logo"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/hornet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hornet_logo"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:text="Fullerton College\n         Hornet"
+                android:textColor="@color/textColor"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/contact_text_view"
+                style="@style/Contact_About_Text"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/contact_info"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/phone_layout"
+                style="@style/Info_Layout"
+                android:layout_below="@id/contact_text_view">
+
+                <ImageView
+                    android:id="@+id/phone_image_view"
+                    style="@style/Contact_About_Icons"
+                    android:layout_below="@id/contact_text_view"
+                    android:src="@drawable/baseline_phone_black_24" />
+
+                <TextView
+                    android:id="@+id/phone_text_view"
+                    style="@style/Contact_About_Text"
+                    android:layout_below="@id/contact_text_view"
+                    android:layout_toRightOf="@id/phone_image_view"
+                    android:text="@string/contact_number"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/mail_layout"
+                style="@style/Info_Layout"
+                android:layout_below="@id/phone_layout">
+
+                <ImageView
+                    android:id="@+id/mail_image_view"
+                    style="@style/Contact_About_Icons"
+                    android:layout_below="@id/phone_layout"
+                    android:src="@drawable/baseline_mail_outline_black_24" />
+
+                <TextView
+
+                    android:id="@+id/mail_text_view"
+                    style="@style/Contact_About_Text"
+                    android:layout_below="@id/phone_layout"
+                    android:layout_toRightOf="@id/mail_image_view"
+                    android:text="@string/email"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/location_layout"
+                style="@style/Info_Layout"
+                android:layout_below="@id/mail_layout">
+
+                <ImageView
+
+                    android:id="@+id/location_image_view"
+                    style="@style/Contact_About_Icons"
+                    android:layout_below="@id/mail_layout"
+                    android:src="@drawable/baseline_location_on_black_24" />
+
+                <TextView
+
+                    style="@style/Contact_About_Text"
+                    android:layout_below="@id/mail_layout"
+                    android:layout_toRightOf="@id/location_image_view"
+                    android:text="@string/location" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/about_main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location_layout"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="About"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/textColor" />
+
+
+            <TextView
+                android:id="@+id/about_info"
+                style="@style/College_Info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_main_text"
+                android:text="@string/college_about" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
