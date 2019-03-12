@@ -2,9 +2,9 @@
     <string name="app_name">SingleScreen</string>
 
     <string name="contact_info">Contact Info</string>
-    <string name="contact_number">1-714-992-7000</string>
+    <string name="contact_number">(714) 992 7000</string>
     <string name="email">admissions@fullcoll.edu</string>
-    <string name="location">321 E Chapman Ave, Fullerton, CA</string>
+    <string name="location">321 E Chapman Ave. \nFullerton, CA 92832</string>
 
     <string name = "college_about">
         Fullerton College is the oldest community college in continuous operation in California.
