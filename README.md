@@ -13,7 +13,7 @@ Import the project in an Android Studio, and compile it to your android device.
   * Sijan Rijal - [sijanr](https://github.com/sijanr)
   
 ## License
-This project is licensed under the MIT License - see the [License.md](./License.md) for details.
+This project is licensed under the MIT License - see the [License](./LICENSE) for details.
 
 ## Acknowledgements
   * Udacity for having a course that helped me to build the project.
