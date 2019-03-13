@@ -8,6 +8,9 @@ Import the project in an Android Studio, and compile it to your android device.
   * The android device should **at least be running on Android 4.0.3.**
   * Android Studio - To compile the app to the device
   * Java SE Development Kit
+  
+## Screenshots
+<img src="./screenshots/screen_1.png" width="110">&nbsp; &nbsp; <img src="./screenshots/screen_2.png" width="110">
 
 ## Authors
   * Sijan Rijal - [sijanr](https://github.com/sijanr)
